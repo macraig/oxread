@@ -15,7 +15,7 @@ namespace Assets.Scripts._Levels.ReadTest
 		public Toggle[] answerButtons;
 		public ToggleGroup toggleGroup;
 		public Button submitButton;
-
+		public GameObject endGamePanel;
 
 		void Awake()
 		{
@@ -97,6 +97,9 @@ namespace Assets.Scripts._Levels.ReadTest
 //            answer.text = "";
         }
 
+		public void EndGame(){
+			endGamePanel.SetActive(true);
+		}
 
 
 

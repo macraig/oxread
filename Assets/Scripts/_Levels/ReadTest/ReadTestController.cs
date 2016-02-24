@@ -21,7 +21,7 @@ namespace Assets.Scripts._Levels.ReadTest
         public override void InitGame()
         {
 			readTestModel = new ReadTestModel(AppController.GetController().GetCurrentGame());
-            readTestModel.StartGame();
+ 
             NextChallenge();
         }
 
@@ -34,6 +34,7 @@ namespace Assets.Scripts._Levels.ReadTest
 		public override void EndGame()
 		{
 			Debug.Log ("END GAME");
+			readTestView.EndGame ();
 		}
 
 

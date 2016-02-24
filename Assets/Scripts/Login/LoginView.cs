@@ -25,7 +25,7 @@ namespace Assets.Scripts.Login{
 			if (Input.anyKeyDown) {
 					ticBtn.interactable = inputText.text.Length > 2;
 			}
-            if (Input.GetKeyUp(KeyCode.Return) || Input.GetKeyUp(KeyCode.KeypadEnter)) { CheckEnteredUsername(); }
+			if (Input.GetKeyUp(KeyCode.Return) || Input.GetKeyUp(KeyCode.KeypadEnter)) { UpdateLevel ();CheckEnteredUsername(); }
         }  
 
         public void OnClickTicBtn(){

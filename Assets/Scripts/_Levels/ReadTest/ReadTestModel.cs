@@ -22,18 +22,24 @@ namespace Assets.Scripts._Levels.ReadTest
 
 
 		public ReadTestModel(int level){
+			StartGame ();
+			LoadExercises (level);
+			answersByQuestionId = new string[totalExercises,2];
+			ShuffleQuestionsByLevel (level);
+
+		}
+
+		public override void StartGame()
+		{
+			currentAnswer = "";
+
 			questionCounter = -1;
-			correctAnswers = 0;
-			wrongAnswers = 0;
-			hints = 0;
+			correctAnswers=0;
+			wrongAnswers=0;
+			hints=0;
 			correctAnswersByType = new int[] {0,0,0,0};
 			wrongAnswersByType = new int[] {0,0,0,0};
 			questions = new List<Question> ();
-			LoadExercises (level);
-			answersByQuestionId = new string[totalExercises,2];
-
-			ShuffleQuestionsByLevel (level);
-
 		}
 
 		void LoadExercises(int level){
@@ -69,32 +75,31 @@ namespace Assets.Scripts._Levels.ReadTest
 		void ShuffleQuestionsByLevel(int level){
 			List<Question> tempQuestions;
 			switch(level){
+			case 0:
 			case 1:
 			case 2:
-			case 3:
 				Shuffle (questions);
 				break;
 			//Randomize all questions except the last 4
-			case 4:
+			case 3:
 				tempQuestions = new List<Question> ();
 				for (int i = 0; i < totalExercises - 4; i++) {
 					tempQuestions.Add (questions [i]);
 				}
 				Shuffle (tempQuestions);
-				for (i; i<totalExercises; i++) {
-					tempQuestions.Add (questions [i]);
+				for (int j=totalExercises-4; j<totalExercises; j++) {
+					tempQuestions.Add (questions [j]);
 				}
 				questions = tempQuestions;
 				break;
 			//Only randomize the first 4 questions
-			case 5:
-				List<Question> tempQuestions2;
-				int j;
-				for (j=0; j < 4; j++) {
-					tempQuestions.Add (questions [j]);
+			case 4:
+				tempQuestions = new List<Question> ();
+				for (int i=0; i < 4; i++) {
+					tempQuestions.Add (questions [i]);
 				}
 				Shuffle (tempQuestions);
-				for (j; j < totalExercises; j++) {
+				for (int j=4; j < totalExercises; j++) {
 					tempQuestions.Add (questions [j]);
 				}
 				questions = tempQuestions;
@@ -132,15 +137,7 @@ namespace Assets.Scripts._Levels.ReadTest
             currentAnswer = "";
         }
 
-        public override void StartGame()
-        {
-            currentAnswer = "";
-
-			questionCounter = 0;
-			correctAnswers=0;
-			wrongAnswers=0;
-			hints=0;
-        }
+       
 
 		public void LogAnswer(bool answer){
 			//Data for Question/Answer CSV
@@ -191,5 +188,19 @@ namespace Assets.Scripts._Levels.ReadTest
 				array[i] = t;
 			}
 		}
+
+		static void Shuffle<T>(T[] array)
+		{	
+
+			int n = array.Length;
+			for (int i = 0; i < n; i++)
+			{
+				int r = i + (int)(Random.value * (n - i));
+				T t = array[r];
+				array[r] = array[i];
+				array[i] = t;
+			}
+		}
+
     }
 }
