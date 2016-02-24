@@ -31,6 +31,12 @@ namespace Assets.Scripts._Levels.ReadTest
 			readTestView.NextChallenge(readTestModel.CurrentQuestion);
         }
 
+		public override void EndGame()
+		{
+			Debug.Log ("END GAME");
+		}
+
+
         internal void CheckAnswer(string answer)
         {
             if (readTestModel.CheckAnswer(answer))
@@ -42,19 +48,32 @@ namespace Assets.Scripts._Levels.ReadTest
             }
         }
 
+		public string[] GetHints(){
+			return readTestModel.CurrentQuestion.HintTexts;
+		}
+
         private void WrongAnswer()
         {
 			Debug.Log ("Wrong");
-            readTestView.WrongAnswer();
+			LogAnswer (false);
+//            readTestView.WrongAnswer();
+			if (GameIsEnded())
+			{
+//				EndGame(readTestModel.GetMinSeconds(), readTestModel.GetPointsPerSecond(), readTestModel.GetPointsPerError());
+			} else
+			{
+				NextChallenge();
+			}
         }
 
         private void CorrectAnswer()
         {
 			Debug.Log ("Correct");
-            readTestView.CorrectAnswer();
+			LogAnswer (true);
+//            readTestView.CorrectAnswer();
             if (GameIsEnded())
             {
-                EndGame(readTestModel.GetMinSeconds(), readTestModel.GetPointsPerSecond(), readTestModel.GetPointsPerError());
+//                EndGame(readTestModel.GetMinSeconds(), readTestModel.GetPointsPerSecond(), readTestModel.GetPointsPerError());
             } else
             {
                 NextChallenge();
@@ -72,6 +91,14 @@ namespace Assets.Scripts._Levels.ReadTest
         {
             return readTestController;
         }
+
+		void LogAnswer(bool answer){
+			readTestModel.LogAnswer (answer);
+		}
+
+		public void LogHint(){
+			readTestModel.LogHint ();
+		}
 
       
     }

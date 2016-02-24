@@ -124,14 +124,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11485796, guid: 290df612567fc7946a348d8008f0dccc, type: 2}
-      propertyPath: m_Text
-      value: njkjnjk
-      objectReference: {fileID: 0}
-    - target: {fileID: 11485796, guid: 290df612567fc7946a348d8008f0dccc, type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 60
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 290df612567fc7946a348d8008f0dccc, type: 2}
   m_IsPrefabParent: 0

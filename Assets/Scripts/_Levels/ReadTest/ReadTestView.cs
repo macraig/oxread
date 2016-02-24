@@ -17,52 +17,87 @@ namespace Assets.Scripts._Levels.ReadTest
 		public Button submitButton;
 
 
-		//las rtas son toggles, el boton hace el subt
+		void Awake()
+		{
+			readingText.supportRichText = true;
+		}
 
 		internal void NextChallenge(Question question)
         {
+			submitButton.interactable = false;
 			readingText.text = question.Paragraph;
 			questionText.text = question.QuestionText;
 			for (int i = 0; i < 3; i++) {
 				answerButtons [i].GetComponentInChildren<Text>().text = question.AnswersTexts [i];
-			}
-
-            
+			}  
         }
 
-		void ShuffleAnswers(string[] answerTexts){
-			
-		}
+
 
         public void OnClickSubmit()
         {
+			
 			IEnumerator<Toggle> toggleEnum = toggleGroup.ActiveToggles().GetEnumerator();
 			toggleEnum.MoveNext();
 			Toggle toggle = toggleEnum.Current;
+			toggle.isOn = false;
             PlaySoundClick();
 			ReadTestController.GetController().CheckAnswer(toggle.GetComponentInChildren<Text>().text);
         }
 
-        public void OnClickSecondtButton(string answer)
+        public void OnClickHintButton()
         {
             PlaySoundClick();
-            ReadTestController.GetController().CheckAnswer(answer);
+			ShowHint ();
+
         }
 
-        internal void CorrectAnswer()
-        {
-            PlayRightSound();
-        }
+		void ShowHint(){
+			string[] hintTexts = ReadTestController.GetController ().GetHints ();
+			string oldString = readingText.text;
+			string newString ="";
 
-        internal void WrongAnswer()
-        {
-            PlayWrongSound();
-        }
+
+			for (int i = 0; i < hintTexts.Length; i++) {
+				
+				int hintIndex = readingText.text.IndexOf(hintTexts[i]);
+				int hintLength = hintTexts[i].Length;
+
+				string start = oldString.Substring (0, hintIndex);
+				string middle = oldString.Substring (hintIndex, hintLength);
+				string end = oldString.Substring (hintIndex+hintLength, oldString.Length-(hintIndex+hintLength));
+
+				newString = start+"<color=white>" +middle + "</color>"+end;
+
+				oldString = newString;
+			}
+
+			readingText.text = newString;
+
+			ReadTestController.GetController ().LogHint ();
+		}
+
+
+		public void OnToggleSelected(){
+			submitButton.interactable = true;
+		}
+
+//        internal void CorrectAnswer()
+//        {
+//			//PlayRightSound();
+//        }
+//
+//        internal void WrongAnswer()
+//        {
+//			//PlayWrongSound();
+//        }
 
         public override void RestartGame()
         {
 //            answer.text = "";
         }
+
+
 
 
     }

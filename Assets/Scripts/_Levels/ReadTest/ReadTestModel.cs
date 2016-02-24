@@ -10,20 +10,29 @@ namespace Assets.Scripts._Levels.ReadTest
     {
 		private static Random rng = new Random();  
 
-		private int questionCounter,correctAnswers,incorrectAnswers,hints;
+		private int questionCounter,correctAnswers,wrongAnswers,hints;
 		private string currentAnswer;
 		private List<Question> questions;
 		private Question currentQuestion;
+		private int[] correctAnswersByType;
+		private int[] wrongAnswersByType;
 
+		private string[,] answersByQuestionId;
+		private int totalExercises;
 
 
 		public ReadTestModel(int level){
 			questionCounter = -1;
 			correctAnswers = 0;
-			incorrectAnswers = 0;
+			wrongAnswers = 0;
 			hints = 0;
+			correctAnswersByType = new int[] {0,0,0,0};
+			wrongAnswersByType = new int[] {0,0,0,0};
 			questions = new List<Question> ();
 			LoadExercises (level);
+			answersByQuestionId = new string[totalExercises,2];
+
+			ShuffleQuestionsByLevel (level);
 
 		}
 
@@ -33,7 +42,7 @@ namespace Assets.Scripts._Levels.ReadTest
 			TextAsset JSONstring = Resources.Load(exerciseFileName) as TextAsset;
 			JSONNode data = JSON.Parse(JSONstring.text);
 
-			int totalExercises = data ["exercises"].Count;
+			 totalExercises = data ["exercises"].Count;
 			string paragraphText, questionText;
 			string[] hintTexts,answerTexts;
 			int questionType;
@@ -57,6 +66,45 @@ namespace Assets.Scripts._Levels.ReadTest
 
 		}
 
+		void ShuffleQuestionsByLevel(int level){
+			List<Question> tempQuestions;
+			switch(level){
+			case 1:
+			case 2:
+			case 3:
+				Shuffle (questions);
+				break;
+			//Randomize all questions except the last 4
+			case 4:
+				tempQuestions = new List<Question> ();
+				for (int i = 0; i < totalExercises - 4; i++) {
+					tempQuestions.Add (questions [i]);
+				}
+				Shuffle (tempQuestions);
+				for (i; i<totalExercises; i++) {
+					tempQuestions.Add (questions [i]);
+				}
+				questions = tempQuestions;
+				break;
+			//Only randomize the first 4 questions
+			case 5:
+				List<Question> tempQuestions2;
+				int j;
+				for (j=0; j < 4; j++) {
+					tempQuestions.Add (questions [j]);
+				}
+				Shuffle (tempQuestions);
+				for (j; j < totalExercises; j++) {
+					tempQuestions.Add (questions [j]);
+				}
+				questions = tempQuestions;
+				break;
+
+			}
+
+
+		}
+
 		string[] GetStringArray(JSONArray jsonArray){
 			
 			string[] array = new string[jsonArray.Count];
@@ -71,9 +119,11 @@ namespace Assets.Scripts._Levels.ReadTest
         {
 			questionCounter++;
 			if (questionCounter < questions.Count) {
-				currentQuestion = questions [Random.Range (0, questions.Count)];
-				currentAnswer = currentQuestion.AnswersTexts[0];
+				currentQuestion = questions [questionCounter];
+				currentAnswer = currentQuestion.AnswersTexts [0];
 				Shuffle (currentQuestion.AnswersTexts);
+			} else {
+				ReadTestController.GetController ().EndGame ();
 			}
         }
 
@@ -88,9 +138,30 @@ namespace Assets.Scripts._Levels.ReadTest
 
 			questionCounter = 0;
 			correctAnswers=0;
-			incorrectAnswers=0;
+			wrongAnswers=0;
 			hints=0;
         }
+
+		public void LogAnswer(bool answer){
+			//Data for Question/Answer CSV
+			answersByQuestionId [currentQuestion.Id,0] = currentQuestion.QuestionText;
+			answersByQuestionId [currentQuestion.Id,1]= (answer) ? "1" : "0";
+
+			//Data for Global Indo CSV
+			if (answer) {
+				correctAnswers++;
+//				correctAnswersByType [currentQuestion.GetType - 1]=correctAnswersByType[currentQuestion.GetType()-1]+1;
+			} else {
+				wrongAnswers++;
+//				wrongAnswersByType [currentQuestion.GetType - 1]=wrongAnswersByType[currentQuestion.GetType()-1]+1;
+			}
+		}
+
+		public void LogHint(){
+			//TODO: Log hints
+		}
+
+
 
         internal bool CheckAnswer(string answer)
         {
@@ -109,13 +180,13 @@ namespace Assets.Scripts._Levels.ReadTest
 		}
 
 
-		static void Shuffle<T>(T[] array)
+		static void Shuffle(List<Question> array)
 		{	
-			int n = array.Length;
+			int n = array.Count;
 			for (int i = 0; i < n; i++)
 			{
 				int r = i + (int)(Random.value * (n - i));
-				T t = array[r];
+				Question t = array[r];
 				array[r] = array[i];
 				array[i] = t;
 			}

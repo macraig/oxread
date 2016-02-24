@@ -645,7 +645,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 11458914}
   m_OnClick:
     m_PersistentCalls:
@@ -1008,7 +1008,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 185cb5e6775eba841a1c7554053e332e, type: 3}
-    m_FontSize: 61
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 6
@@ -1019,7 +1019,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Text'
+  m_Text: njkjnjk
 --- !u!114 &11485976
 MonoBehaviour:
   m_ObjectHideFlags: 1

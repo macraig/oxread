@@ -22,6 +22,9 @@ namespace Assets.Scripts.Login{
         }
 
         void Update(){
+			if (Input.anyKeyDown) {
+					ticBtn.interactable = inputText.text.Length > 2;
+			}
             if (Input.GetKeyUp(KeyCode.Return) || Input.GetKeyUp(KeyCode.KeypadEnter)) { CheckEnteredUsername(); }
         }  
 
@@ -40,8 +43,7 @@ namespace Assets.Scripts.Login{
 
         void CheckEnteredUsername(){
             inputText.text = inputText.text.Trim();
-			if(selectedLevel!=-1)
-				LoginController.GetController().SaveUsername(inputText.text.ToLower(),selectedLevel);
+			LoginController.GetController().SaveUsername(inputText.text.ToLower(),selectedLevel);
         }
 
         internal void ShowIncorrectInputAnimation(){
@@ -64,16 +66,7 @@ namespace Assets.Scripts.Login{
             SoundController.GetController().PlayClickSound();
         }
 
-		public void OnToggleClick(GameObject toggleBtn){
-//			SoundManager.instance.PlayClicSound ();
-			Color color;
-			if (toggleBtn.GetComponent<Toggle> ().isOn) {
-				color = new Color32 (2, 92, 99, 255);
-			} else {
-				color = new Color32 (255, 255, 255, 255);
-			}
-			toggleBtn.GetComponentInChildren<Image>().color = color;
-		}
+
 
 
     }

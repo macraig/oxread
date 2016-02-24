@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cover: {fileID: 164528, guid: b82f5c99c8bb71b45b86cf9805d832fe, type: 2}
   login: {fileID: 119648, guid: cc182db072ff85e49ac73f497d50127b, type: 2}
-  inGameMenu: {fileID: 110784, guid: cae38ecc093401c47b4eba35715b0d1f, type: 2}
+  inGameMenu: {fileID: 137568, guid: cae38ecc093401c47b4eba35715b0d1f, type: 2}
   instructions: {fileID: 129252, guid: 3d040415f450de944af0b43aad4781b8, type: 2}
   readTest: {fileID: 192754, guid: 21e6eff29bb7b46d5a3a9b9bb03caf5d, type: 2}
   viewPanel: {fileID: 685247089}

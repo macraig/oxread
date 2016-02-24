@@ -10,10 +10,7 @@ namespace Assets.Scripts._Levels
         public abstract void NextChallenge();
         public abstract void InitGame();
         
-        public void EndGame(int minSeconds, int pointsPerSecond, int pointsPerError)
-        {
-            // todo
-        }
+		public abstract void EndGame ();
 
        
     }

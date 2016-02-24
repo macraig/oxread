@@ -110,7 +110,7 @@
 			"questions":["¿Quién gobernaba a los animales?"],
 			"hints":["Se llama así porque en ese monte, dice la leyenda, solía vivir un bisonte enorme que gobernaba a todos los animales que vivían allí"],
 			"answers":["Un bisonte que vivía en el Monte Bisonte","Un hombre peludo","Un bisonte que plantaba las flores más hermosas"],
-			"questionType":0
+			"questionType":1
 		}
 		
 	]
