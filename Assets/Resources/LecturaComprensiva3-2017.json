@@ -1,0 +1,46 @@
+{
+	"exercises": [
+		{
+			"paragraph":"¿Sabías que hay casi 9.000 especies distintas de insectos cantantes y saltarines conocidos como saltamontes? Los saltamontes son insectos largos y delgados con alas y patas.",
+			"questions":["¿Quiénes son los insectos cantantes y saltarines?"],
+			"hints":["¿Sabías que hay casi 9.000 especies distintas de insectos cantantes y saltarines conocidos como saltamontes?"],
+			"answers":["Los saltamontes","Son muchas especies de distintos insectos","No lo dice"],
+			"questionType":0
+		},
+		{
+			"paragraph":"Los cocodrilos y los caimanes son reptiles. Al igual que otros reptiles, tienen la piel seca y cubierta de escamas y ponen huevos. Tienen sangre fría. Esto significa que no pueden producir calor para mantener su cuerpo caliente.",
+			"questions":["¿Qué quiere decir que tienen SANGRE FRÍA?"],
+			"hints":["Esto significa que no pueden producir calor para mantener su cuerpo caliente"],
+			"answers":["Que no producen el calor necesario para su cuerpo","Que se mantienen frescos","Que están adaptados para las zonas cálidas"],
+			"questionType":1
+		},
+		{
+			"paragraph":"Los abuelos de Federico tienen una huerta increíble. Mi mamá dice que eso es porque sus abuelos pasan mucho tiempo trabajando en ella. Siembran lechugas, tomates, zanahorias y unas enormes cebollas; los vegetales favoritos de mi mamá.",
+			"questions":["¿Qué es lo que le dice la mamá?"],
+			"hints":["Mi mamá dice que eso es porque sus abuelos pasan mucho tiempo trabajando en ella"],
+			"answers":["Que la huerta es buena por el trabajo de los abuelos","Que a los abuelos sólo les interesa la huerta","Que los abuelos plantan sus vegetales favoritos para regalárselos a ella"],
+			"questionType":1
+		},
+		{
+			"paragraph":"Los elefantes son animales muy sociables. Viven en rebaños de 10 a 20 cabezas, conducidas por el macho y la hembra más fuertes. La mayor parte del día la dedican a buscar alimento y agua. Beben unos 130 litros de agua y necesitan bañarse varias veces al día.",
+			"questions":["¿Quiénes conducen la manada?"],
+			"hints":["conducidas por el macho y la hembra más fuertes"],
+			"answers":["El macho y la hembra más fuertes","Las hembras más fuertes","Los machos más fuertes"],
+			"questionType":0
+		},
+		{
+			"paragraph":"Ese verano hizo mucho calor. Con mis amigos nos juntábamos en la esquina y corríamos juntos hasta lo de Pedro. Él tenía la pileta más grande del mundo. El agua estaba siempre fresca.",
+			"questions":["¿Por qué iban a la casa de Pedro?"],
+			"hints":["Él tenía la pileta más grande del mundo. El agua estaba siempre fresca"],
+			"answers":["Para refrescarse en la pileta","Porque la mamá les preparaba la merienda","Porque Pedro tenía la casa más grande del mundo"],
+			"questionType":3
+		},
+		{
+			"paragraph":"En el mundo hacía frío, mucho frío. Aún no se había descubierto el fuego ni inventado la calefacción y el sol no calentaba como ahora. Los hombres apenas tenían con qué abrigarse y vivían escondidos en cuevas en el invierno.",
+			"questions":["¿Por qué se escondían los hombres?"],
+			"hints":["Los hombres apenas tenían con qué abrigarse y vivían escondidos en cuevas en el invierno"],
+			"answers":["Porque hacía mucho frío y buscaban protección en las cuevas","Tenían miedo y por eso vivían en cuevas","Porque dentro de las cuevas había calefacción"],
+			"questionType":3
+		}
+	]
+}

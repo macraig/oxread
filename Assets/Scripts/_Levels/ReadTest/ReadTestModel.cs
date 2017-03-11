@@ -25,7 +25,7 @@ namespace Assets.Scripts._Levels.ReadTest
 			StartGame ();
 			LoadExercises (level);
 			answersByQuestionId = new string[totalExercises,2];
-			ShuffleQuestionsByLevel (level);
+			//ShuffleQuestionsByLevel (level);
 
 		}
 
@@ -43,7 +43,7 @@ namespace Assets.Scripts._Levels.ReadTest
 		}
 
 		void LoadExercises(int level){
-			string exerciseFileName = "LecturaComprensiva"+(level+1).ToString();
+			string exerciseFileName = "LecturaComprensiva"+(level+1).ToString() + "-2017";
 
 			TextAsset JSONstring = Resources.Load(exerciseFileName) as TextAsset;
 			JSONNode data = JSON.Parse(JSONstring.text);

@@ -1,0 +1,53 @@
+{
+	"exercises": [
+		{
+			"paragraph":"Había una vez un roble. Era viejo, pues trescientos sesenta y cinco años llevaban sus raíces enterradas en esas tierras. Los robles miden el tiempo de forma diferente, y mientras nosotros dormimos cada noche, ellos lo hacen todo el invierno.",
+			"questions":["¿Cuándo duermen los robles?"],
+			"hints":["Los robles miden el tiempo de forma diferente, y mientras nosotros dormimos cada noche, ellos lo hacen todo el invierno"],
+			"answers":["El invierno","Cada noche","No duermen"],
+			"questionType":0
+		},
+		{
+			"paragraph":"El tigre había peleado con el hombre y lo venía persiguiendo hasta la costa del Yabebirí. El animal estaba también muy herido, y la sangre le corría por todo el cuerpo. Vio al hombre caído del otro lado del río, y lanzando un rugido de rabia, se echó al agua, para acabar de matarlo.",
+			"questions":["¿Qué pasó entre el hombre y el tigre?"],
+			"hints":["El tigre había peleado con el hombre y lo venía persiguiendo hasta la costa del Yabebirí. El animal estaba también muy herido, y la sangre le corría por todo el cuerpo"],
+			"answers":["Pelearon y ambos estaban heridos","Pelearon y el tigre ganó","El tigre mató al hombre"],
+			"questionType":1
+		},
+		{
+			"paragraph":"El chimpancé sabe fabricar sus propias herramientas. Arranca una rama de un árbol y se hace una vara. La mete en los hormigueros, la retira y lame los insectos que se han quedado pegados. Si tiene sed utiliza un puñado de hojas como si fuera una esponja, recogiendo el agua de lluvia.",
+			"questions":["¿Por qué es astuto el chimpancé?"],
+			"hints":["El chimpancé sabe fabricar sus propias herramientas"],
+			"answers":["Porque crea sus propias herramientas","Porque es muy similar al humano","Porque usa esponjas"],
+			"questionType":2
+		},
+		{
+			"paragraph":"Cierta vez las víboras dieron un gran baile. Invitaron a las ranas y a los sapos, a los flamencos, y a los yacarés y a los peces. Los peces, como no caminan, no pudieron bailar; pero siendo el baile a la orilla del río, los peces estaban asomados a la arena, y aplaudían con la cola.",
+			"questions":["¿Quiénes dieron el baile?"],
+			"hints":["Cierta vez las víboras dieron un gran baile. Invitaron a las ranas y a los sapos, a los flamencos, y a los yacarés y a los peces"],
+			"answers":["Las víboras", "Los peces", "Los flamencos"],
+			"questionType":0
+		},
+		{
+			"paragraph":"Los yacarés, para adornarse bien, se habían puesto en el pescuezo un collar de plátanos, y fumaban cigarros paraguayos. Los sapos se habían pegado escamas de peces en todo el cuerpo, y caminaban meneándose, como si nadaran.",
+			"questions":["¿Qué es el pescuezo?"],
+			"hints":["Los yacarés, para adornarse bien, se habían puesto en el pescuezo un collar de plátanos, y fumaban cigarros paraguayos"],
+			"answers":["El cuello","La panza","La espalda"],
+			"questionType":2
+		},
+		{
+			"paragraph":"Las que estaban hermosísimas eran las víboras. Todas, sin excepción, estaban vestidas con traje de bailarina, del mismo color de cada víbora. Las víboras coloradas llevaban una pollerita de tul colorado; las verdes, una de tul verde; y las yararás, una pollerita de tul gris pintada con rayas.",
+			"questions":["¿Por qué estaban tan lindas las víboras?"],
+			"hints":["Todas, sin excepción, estaban vestidas con traje de bailarina, del mismo color de cada víbora"],
+			"answers":["Porque estaban vestidas con el mismo color que su piel","Porque eran altas y largas","Porque eran de color verde y amarillo"],
+			"questionType":1
+		},
+		{
+			"paragraph":"Y las más espléndidas de todas eran las víboras de coral que estaban vestidas con larguísimas gasas rojas, y negras, y bailaban como serpentinas. Cuando las víboras danzaban y daban vueltas apoyadas en la punta de la cola, todos los invitados aplaudían como locos.",
+			"questions":["¿De qué color son las víboras de coral?"],
+			"hints":["Y las más espléndidas de todas eran las víboras de coral que estaban vestidas con larguísimas gasas rojas, y negras, y bailaban como serpentinas"],
+			"answers":["Rojas y negras","Verdes","Coral"],
+			"questionType":3
+		}
+	]
+}

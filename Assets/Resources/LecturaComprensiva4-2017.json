@@ -1,0 +1,61 @@
+{
+	"exercises": [
+		{
+			"paragraph":"En los ríos tropicales viven animales sorprendentes como la raya eléctrica. Este pez produce verdadera electricidad. Se supone que la usa para defenderse de sus enemigos y para paralizar víctimas. Su electricidad puede ser muy fuerte, incluso, puede paralizar un hombre por unos momentos.",
+			"questions":["¿Para qué usan la electricidad las rayas?"],
+			"hints":["Se supone que la usa para defenderse de sus enemigos y para paralizar víctimas"],
+			"answers":["Para paralizar a sus enemigos","Para matar humanos","Para nadar rápido"],
+			"questionType":0
+		},
+		{
+			"paragraph":"Hubo una época en la cual la piel del venado era distinta. Tenía un color muy claro y gracias a ello, era presa fácil para los cazadores,quienes apreciaban mucho el sabor de su carne y la resistencia de su piel, que usaban en la construcción de escudos para los guerreros.",
+			"questions":["¿Para qué se usaba la piel de venado?"],
+			"hints":["gracias a ello, era presa fácil para los cazadores,quienes apreciaban mucho el sabor de su carne y la resistencia de su piel, que usaban en la construcción de escudos para los guerreros"],
+			"answers":["Para comer su carne y usar su piel resistente","Para cazarlos por diversión","Para cambiarles el color de la piel"],
+			"questionType":1
+		},
+		{
+			"paragraph":"En el interior de la nave podían verse dos ocupantes. Uno era alto, blanco, sin pelo, ojos grandes y oscuros, apenas nariz y tres dedos largos en cada mano. El otro era bajo, redondo ¡y metálico! Sus ojos emitían luz y junto a su compañeros estaban mirando el planeta Tierra.",
+			"questions":["¿Qué eran los personajes?"],
+			"hints":["Sus ojos emitían luz y junto a su compañeros estaban mirando el planeta Tierra"],
+			"answers":["Alienígenas", "Personas", "Animales"],
+			"questionType":3
+		},
+		{
+			"paragraph":"Estaba de pie con las piernas separadas. Sus manos estaban afianzadas a su cadera y con la cabeza alta sonreía a la tormenta. Los vientos golpeaban su cara. Las olas rompían fuerte contra el suelo pero el pirata no se movía y se reía como desafiando al viento y al mar a rugir más fuerte.",
+			"questions":["¿Dónde estaba el pirata?"],
+			"hints":["Las olas rompían fuerte contra el suelo pero el pirata no se movía y se reía como desafiando al viento y al mar a rugir más fuerte"],
+			"answers":["En un barco", "En una isla", "En un auto"],
+			"questionType":3
+		},
+		{
+			"paragraph":"El bisonte es un animal muy grande que se parece a un toro. Tiene pelo muy grueso y tupido. El pelo es un abrigo muy caluroso que le permite vivir en zonas de mucho frío. Cuando el primer bisonte llegó al pueblo la gente inmediatamente le tuvo miedo y se reunieron para resolver qué hacer.",
+			"questions":["¿Cómo era el pelo del bisonte?"],
+			"hints":["Tiene pelo muy grueso y tupido"],
+			"answers":["Grueso y tupido","Muy oscuro","Igual a la del toro"],
+			"questionType":0
+		},
+		{
+			"paragraph":"Cuando los campesinos lo vieron por primera vez pensaron que era un toro peludo y peligroso. Eso mismo le dijeron a la gente del pueblo y decidieron que irían a cazarlo. Pero no esperaban que los animales lo protegieron. Estos se negaron a trabajar.",
+			"questions":["¿Por qué los hombres querían cazar al bisonte?"],
+			"hints":["Cuando los campesinos lo vieron por primera vez pensaron que era un toro peludo y peligroso"],
+			"answers":["Porque tenían miedo de lo que el animal les iba a hacer","Porque querían sacarle el pelo que es muy abrigado","Porque es un animal grande"],
+			"questionType":3
+		},
+		{
+			"paragraph":"El pueblo se revolucionó. Los cazadores quisieron matar al bisonte pero la gente del pueblo los detuvo. Los campesinos buscaban formas de hacer que los animales trabajaran. Una niña estaba juntando flores en el campo cuando el bisonte se le acercó. La madre a la distancia la vio y corrió para salvarla.",
+			"questions":["¿Por qué los campesinos detuvieron a los cazadores?"],
+			"hints":["Los cazadores quisieron matar al bisonte pero la gente del pueblo los detuvo. Los campesinos buscaban formas de hacer que los animales trabajaran."],
+			"answers":["Porque no querían hacerle nada al bisonte para que sus animales trabajaran","Porque les daba lástima el bisonte","Porque descubrieron que el bisonte era bueno"],
+			"questionType":2
+		},
+		{
+			"paragraph":"La madre corrió a su hija y escuchó un grito. Cuando llegó hasta ella, vio que el grito era una risa. El animal la molestaba con su hocico, le hacía cosquillas e incluso corrían uno al otro. La madre se acercó al animal y le acarició el lomo. Y así es como los hombres y los bisontes vivieron en paz.",
+			"questions":["¿Qué estaban haciendo el bisonte y la niña?"],
+			"hints":["El animal la molestaba con su hocico, le hacía cosquillas e incluso corrían uno al otro"],
+			"answers":["Jugando","Peleando","Discutiendo"],
+			"questionType":1
+		}
+		
+	]
+}

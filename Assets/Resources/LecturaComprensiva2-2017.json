@@ -1,0 +1,46 @@
+{
+	"exercises": [
+		{
+			"paragraph":"La familia Pérez tenía una bebé que todas las mañanas lloraba a las 7 de la mañana. Su mamá le preparaba la mamadera y cuando empezaba a tomar, la bebé empezaba a sonreír.",
+			"questions":["¿A qué hora lloraba la bebé?"],
+			"hints":["La familia Pérez tenía una bebé que todas las mañanas lloraba a las 7 de la mañana"],
+			"answers":["A las 7 de la mañana"," A las 7 de la tarde","A las 8 de la mañana"],
+			"questionType":0
+		},
+		{
+			"paragraph":"Rocío mira el último sándwich con muchas ganas. Su amiga, Martina, los preparó y siempre hace los mejores sándwiches de jamón, queso y tomate. Martina le dijo una vez a Rocío que el ingrediente secreto era la manteca.",
+			"questions":["¿Quién preparó los sándwiches?"],
+			"hints":["Su amiga, Martina, los preparó y siempre hace los mejores sándwiches de jamón, queso y tomate"],
+			"answers":["Martina","Rocío","Los compraron"],
+			"questionType":0
+		},
+		{
+			"paragraph":"¡Cuidado! - gritó Sofía.\nEl león estaba muy cerca de Pedro. Pedro lo miraba temblando y en puntas de pie se fue caminando hacia atrás.",
+			"questions":["¿Cómo estaba Pedro?"],
+			"hints":["Pedro lo miraba temblando y en puntas de pie se fue caminando hacia atrás."],
+			"answers":["Asustado y temblando","Con frío y temblando","Sorprendido y contento"],
+			"questionType":1
+		},
+		{
+			"paragraph":"Simón tenía mucho hambre y su mamá estaba durmiendo. Se paró sobre la silla para agarrar las tostadas que su mamá dejaba en un frasco. Simón puso el frasco sobre la silla y al bajar de ella ¡CRASH! El frasco se rompió y las tostadas quedaron en el piso con los vidrios.",
+			"questions":["¿Qué quiere decir CRASH?"],
+			"hints":["¡CRASH! El frasco se rompió y las tostadas quedaron en el piso con los vidrios"],
+			"answers":["Es el ruido del frasco rompiéndose","Es el nombre del frasco", "No significa nada"],
+			"questionType":2
+		},
+		{
+			"paragraph":"Olivia se quedó dormida bajo un árbol. Soñó que escalaba el árbol y daba un salto que la llevaba volando por los aires. Se acostó en una nube y miró hacia abajo. Las personas se veían como hormigas desde arriba.",
+			"questions":["¿Qué miraba Olivia en su sueño?"],
+			"hints":["Se acostó en una nube y miró hacia abajo. Las personas se veían como hormigas desde arriba"],
+			"answers":["A las personas","A las hormigas","A las nubes"],
+			"questionType":2
+		},
+		{
+			"paragraph":"Era una noche de tormenta. Felipe miraba por la ventana de su cuarto a la gente corriendo. De pronto, vio a un chachorrito esconderse debajo del techo de la florería para no mojarse.",
+			"questions":["¿De qué corría la gente?"],
+			"hints":["Era una noche de tormenta. Felipe miraba por la ventana de su cuarto a la gente corriendo."],
+			"answers":["De la tormenta","Del cachorro","De Felipe"],
+			"questionType":2
+		},
+	]
+}
