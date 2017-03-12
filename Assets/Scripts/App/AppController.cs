@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Assets.Scripts.Sound;
 using System;
+using Assets.Scripts._Levels.ReadTest;
 
 namespace Assets.Scripts.App
 {
@@ -51,6 +52,16 @@ namespace Assets.Scripts.App
 
         internal void SetLevel(int level) {
             appModel.SetLevel(level);
+        }
+
+        public int GetCurrentChallenge()
+        {
+            return appModel.GetCurrentGame();
+        }
+
+        public int GetGamesQuantity()
+        {
+            return ReadTestController.GetController().GetTotalActivities();
         }
     }
 }

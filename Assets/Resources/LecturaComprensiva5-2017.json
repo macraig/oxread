@@ -1,10 +1,10 @@
 {
 	"exercises": [
 		{
-			"paragraph":"Había una vez un roble. Era viejo, pues trescientos sesenta y cinco años llevaban sus raíces enterradas en esas tierras. Los robles miden el tiempo de forma diferente, y mientras nosotros dormimos cada noche, ellos lo hacen todo el invierno.",
+			"paragraph":"Había una vez un roble. Era viejo, pues trescientos sesenta y cinco años llevaban sus raíces enterradas en esas tierras. Resulta que los robles miden el tiempo de forma diferente, y mientras nosotros dormimos cada noche, ellos lo hacen todo el invierno.",
 			"questions":["¿Cuándo duermen los robles?"],
-			"hints":["Los robles miden el tiempo de forma diferente, y mientras nosotros dormimos cada noche, ellos lo hacen todo el invierno"],
-			"answers":["El invierno","Cada noche","No duermen"],
+			"hints":["Resulta que los robles miden el tiempo de forma diferente, y mientras nosotros dormimos cada noche, ellos lo hacen todo el invierno"],
+			"answers":["En invierno","Cada noche","No duermen"],
 			"questionType":0
 		},
 		{

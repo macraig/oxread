@@ -79,7 +79,7 @@ namespace Assets.Scripts._Levels.ReadTest
 
 
 		public void OnToggleSelected(){
-			submitButton.interactable = true;
+			submitButton.interactable = answerButtons[0].transform.parent.GetComponent<ToggleGroup>().AnyTogglesOn();
 		}
 
 //        internal void CorrectAnswer()

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using Assets.Scripts.App;
+using Assets.Scripts.Metrics;
 
 namespace Assets.Scripts.Login
 {
@@ -23,7 +24,10 @@ namespace Assets.Scripts.Login
 
                 AppController.GetController().SetUsername(username);
 				ViewController.GetController ().StartGame(level);
-            } else{
+                MetricsController.GetController().LoadFromDisk(username);
+
+            }
+            else {
                 loginView.ShowIncorrectInputAnimation();
             }
 

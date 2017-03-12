@@ -2,6 +2,7 @@
 using UnityEngine;
 using Assets.Scripts;
 using System.Collections.Generic;
+using Assets.Scripts.Metrics;
 
 namespace Assets.Scripts._Levels.ReadTest
 {
@@ -129,7 +130,8 @@ namespace Assets.Scripts._Levels.ReadTest
 				Shuffle (currentQuestion.AnswersTexts);
 			} else {
 				ReadTestController.GetController ().EndGame ();
-			}
+                MetricsController.GetController().GameEnd();
+            }
         }
 
         public override void RestartGame()
@@ -154,8 +156,9 @@ namespace Assets.Scripts._Levels.ReadTest
 			}
 		}
 
-		public void LogHint(){
-			//TODO: Log hints
+		public void LogHint()
+		{
+		    //TODO: Log hints
 		}
 
 
@@ -202,5 +205,19 @@ namespace Assets.Scripts._Levels.ReadTest
 			}
 		}
 
+	    public int GetTotalActivities()
+	    {
+	        return questions.Count;
+	    }
+
+	    public string GetActivityName(int activity)
+	    {
+            return questions[activity].QuestionText;
+        }
+
+	    public int GetIndexOfCurrentQuestion()
+	    {
+	        return questionCounter;
+	    }
     }
 }

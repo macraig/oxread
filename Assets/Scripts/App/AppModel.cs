@@ -44,5 +44,10 @@ namespace Assets.Scripts.App
         {
             currentLevel = level;
         }
+
+        public int GetCurrentChallenge()
+        {
+            return currentLevel;
+        }
     }
 }

@@ -15,9 +15,9 @@
 			"questionType":1
 		},
 		{
-			"paragraph":"Los abuelos de Federico tienen una huerta increíble. Mi mamá dice que eso es porque sus abuelos pasan mucho tiempo trabajando en ella. Siembran lechugas, tomates, zanahorias y unas enormes cebollas; los vegetales favoritos de mi mamá.",
-			"questions":["¿Qué es lo que le dice la mamá?"],
-			"hints":["Mi mamá dice que eso es porque sus abuelos pasan mucho tiempo trabajando en ella"],
+			"paragraph":"Los abuelos de Federico tienen una huerta increíble. Su mamá dice que eso es porque sus abuelos pasan mucho tiempo trabajando en ella. Siembran lechugas, tomates, zanahorias y unas enormes cebollas; los vegetales favoritos de mi mamá.",
+			"questions":["¿Qué es lo que le dice su mamá?"],
+			"hints":["Su mamá dice que eso es porque sus abuelos pasan mucho tiempo trabajando en ella"],
 			"answers":["Que la huerta es buena por el trabajo de los abuelos","Que a los abuelos sólo les interesa la huerta","Que los abuelos plantan sus vegetales favoritos para regalárselos a ella"],
 			"questionType":1
 		},

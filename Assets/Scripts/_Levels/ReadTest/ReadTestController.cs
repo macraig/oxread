@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.App;
+using Assets.Scripts.Sound;
 using UnityEngine;
 namespace Assets.Scripts._Levels.ReadTest
 {
@@ -43,13 +44,19 @@ namespace Assets.Scripts._Levels.ReadTest
             if (readTestModel.CheckAnswer(answer))
             {
                 CorrectAnswer();
-            } else
+
+            }
+            else
             {
                 WrongAnswer();
+
             }
+            SoundController.GetController().PlayRightAnswerSound();
+
+
         }
 
-		public string[] GetHints(){
+        public string[] GetHints(){
 			return readTestModel.CurrentQuestion.HintTexts;
 		}
 
@@ -94,13 +101,34 @@ namespace Assets.Scripts._Levels.ReadTest
         }
 
 		void LogAnswer(bool answer){
-			readTestModel.LogAnswer (answer);
+		    if (answer)
+		    {
+		        LogRightAnswer(readTestModel.GetIndexOfCurrentQuestion());
+
+		    }
+		    else
+		    {
+                LogWrongAnswer(readTestModel.GetIndexOfCurrentQuestion());
+
+            }
+
+            readTestModel.LogAnswer (answer);
 		}
 
 		public void LogHint(){
+            LogHint(readTestModel.GetIndexOfCurrentQuestion());
 			readTestModel.LogHint ();
 		}
 
-      
+
+	    public int GetTotalActivities()
+	    {
+	        return readTestModel.GetTotalActivities();
+	    }
+
+	    public string GetActivityName(int activity)
+	    {
+            return readTestModel.GetActivityName(activity);
+        }
     }
 }
