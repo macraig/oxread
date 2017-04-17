@@ -36,9 +36,9 @@
 			"questionType":3
 		},
 		{
-			"paragraph":"En el mundo hacía frío, mucho frío. Aún no se había descubierto el fuego ni inventado la calefacción y el sol no calentaba como ahora. Los hombres apenas tenían con qué abrigarse y vivían escondidos en cuevas en el invierno.",
+			"paragraph":"En el mundo hacía frío, mucho frío. Aún no se había descubierto el fuego ni inventado la calefacción y el sol no calentaba como ahora. Los hombres apenas tenían con qué abrigarse y vivían escondidos en cuevas durante el invierno.",
 			"questions":["¿Por qué se escondían los hombres?"],
-			"hints":["Los hombres apenas tenían con qué abrigarse y vivían escondidos en cuevas en el invierno"],
+			"hints":["Los hombres apenas tenían con qué abrigarse y vivían escondidos en cuevas durante el invierno"],
 			"answers":["Porque hacía mucho frío y buscaban protección en las cuevas","Tenían miedo y por eso vivían en cuevas","Porque dentro de las cuevas había calefacción"],
 			"questionType":3
 		}
